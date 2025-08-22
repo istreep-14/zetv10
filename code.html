@@ -1,268 +1,326 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advanced Zetamac Tracker with Google Sheets</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            color: #333;
-        }
-        .container {
-            background: white;
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-        }
-        h1 {
-            color: #333;
-            text-align: center;
-            margin-bottom: 10px;
-            font-size: 2.5em;
-        }
-        .subtitle {
-            text-align: center;
-            color: #666;
-            margin-bottom: 30px;
-            font-size: 1.1em;
-        }
-        .bookmarklet-section {
-            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-            border-radius: 12px;
-            padding: 30px;
-            margin: 30px 0;
-            text-align: center;
-            color: white;
-        }
-        .bookmarklet-section h3 {
-            margin-top: 0;
-            font-size: 1.5em;
-        }
-        .bookmarklet {
-            background: rgba(255,255,255,0.2);
-            border: 2px solid rgba(255,255,255,0.3);
-            color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            border-radius: 50px;
-            font-size: 18px;
-            font-weight: bold;
-            display: inline-block;
-            margin: 15px;
-            transition: all 0.3s ease;
-            backdrop-filter: blur(10px);
-        }
-        .bookmarklet:hover {
-            background: rgba(255,255,255,0.3);
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-            color: white;
-            text-decoration: none;
-        }
-        .setup-section {
-            background: #f8f9fc;
-            padding: 25px;
-            border-radius: 10px;
-            margin: 25px 0;
-            border-left: 5px solid #ff6b6b;
-        }
-        .instructions {
-            background: #f8f9fc;
-            padding: 25px;
-            border-radius: 10px;
-            margin: 25px 0;
-            border-left: 5px solid #4facfe;
-        }
-        .instructions h3, .setup-section h3 {
-            color: #2d3748;
-            margin-top: 0;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        .instructions ol, .setup-section ol {
-            padding-left: 20px;
-        }
-        .instructions li, .setup-section li {
-            margin: 10px 0;
-            line-height: 1.6;
-        }
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            margin: 30px 0;
-        }
-        .feature-card {
-            background: #f7fafc;
-            padding: 20px;
-            border-radius: 10px;
-            border: 1px solid #e2e8f0;
-        }
-        .feature-card h4 {
-            color: #2d3748;
-            margin-top: 0;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .code-block {
-            background: #2d3748;
-            color: #e2e8f0;
-            padding: 15px;
-            border-radius: 8px;
-            font-family: 'Courier New', monospace;
-            font-size: 14px;
-            margin: 15px 0;
-            overflow-x: auto;
-        }
-        .note {
-            background: #fff3cd;
-            border: 1px solid #ffeaa7;
-            color: #856404;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 20px 0;
-        }
-        .note h4 {
-            margin-top: 0;
-        }
-        .warning {
-            background: #f8d7da;
-            border: 1px solid #f5c6cb;
-            color: #721c24;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 20px 0;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>ðŸŽ¯ Advanced Zetamac Tracker</h1>
-        <p class="subtitle">Track individual questions with timestamps and sync directly to Google Sheets</p>
+Zetamac Auto-Tracker with Google Sheets
+
+🚀 Auto-Tracking Zetamac with Google Sheets
+⚡ Maximum Automation Setup
+This solution provides the highest automation possible without browser extensions:
+Auto-starts on page refresh Persists across game sessions Auto-syncs to Google Sheets One-time setup only 
+🚀 Maximum Automation Features
+* Auto-restart: Automatically restarts tracking when you refresh the page
+* Persistent settings: Remembers your Google Sheet URL
+* Background sync: Syncs data every 30 seconds automatically
+* Smart detection: Detects new games and question changes instantly
+* Zero maintenance: Once set up, runs completely automatically
+📊 Enhanced Data Tracking
+* Operation analysis: Tracks +, -, ×, ÷ performance separately
+* Response timing: Individual question solve times
+* Accuracy metrics: Right/wrong answer tracking
+* Game progression: Score changes throughout each game
+* Session analytics: Performance trends over time
+📈 Google Sheets Integration
+* Automatic data export: No manual exports needed
+* Real-time updates: Data appears in sheets within 30 seconds
+* Analytics dashboard: Auto-generated insights and trends
+* Historical tracking: All games stored permanently
+* Custom analysis: Full spreadsheet for your own formulas
+🎯 Smart Analytics
+* Performance trends: Weekly/monthly improvement tracking
+* Best time analysis: Find your peak performance hours
+* Weakness identification: Which operation types need work
+* Streak tracking: Success streaks and patterns
+* Goal monitoring: Progress toward personal bests
+4Quick Setup Guide
+🚀 5-Minute Complete Setup:
+1. Drag bookmarklet to your bookmark bar (above)
+2. Create Google Script: Copy the provided code to script.google.com
+3. Deploy as Web App: Get your web app URL
+4. Go to Zetamac: Click the bookmarklet to start
+5. Enter Script URL: Click "Setup Sheets" in the dashboard
+6. Done! Everything now runs automatically
+⚡ What Happens After Setup
+🎮 While Playing:
+* Tracks every question & answer
+* Monitors timing & accuracy
+* Updates dashboard in real-time
+* Runs silently in background
+📊 Data Collection:
+* Game scores & durations
+* Question-by-question details
+* Operation type breakdowns
+* Response time analysis
+🔄 Auto-Sync:
+* Syncs every 30 seconds
+* Updates Google Sheets
+* Creates analytics dashboard
+* Saves locally as backup
+5Troubleshooting Steps
+🔧 If Nothing Works:
+1. Check Browser: Chrome/Firefox work best for bookmarklets
+2. Disable Extensions: Ad blockers might interfere
+3. Allow Popups: Ensure popups aren't blocked for zetamac.com
+4. Manual Console Method: Copy the console code and paste into F12 console
+5. Try Different Versions: Use the "Ultra Simple" version first
+✅ Success Indicators:
+* Alert popup saying "Tracker Started!" appears
+* Dashboard appears in bottom-right corner of zetamac.com
+* Console shows "Tracking started" message (F12 to check)
+* Dashboard updates when you play games
+🎯 What Each Version Does
+🎯 Simple Tracker (Recommended First)
+* Basic game tracking with scores and timing
+* Small floating dashboard
+* CSV export functionality
+* Local storage backup
+* Minimal code = better compatibility
+📱 Ultra Simple (If Others Fail)
+* Just tracks final scores
+* Saves to localStorage only
+* Minimal interface
+* Works in almost any browser
+* Good for testing if tracking works at all
+📋 Manual Console Code
+* Full featured tracker
+* Copy-paste into browser console (F12)
+* Bypasses bookmarklet limitations
+* Includes Google Sheets integration
+* Most reliable method if bookmarklets fail
+🎮 Game Level:
+* Game Key & URL
+* Start & End Times
+* Final Score
+* Total Duration
+* Questions Answered
+* Overall Accuracy
+❓ Question Level:
+* Question Text
+* Time to Solve
+* Correct/Incorrect
+* Score at Time
+* Operation Type
+* Question Number
+📈 Analytics:
+* Performance Trends
+* Operation Breakdowns
+* Response Time Stats
+* Accuracy by Type
+* Streak Tracking
+* Best/Worst Games
+3Advanced Google Sheets Analytics (Optional)
+Add this additional script for automatic data analysis and insights:
+function createAnalyticsDashboard() {
+  const spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
+  let analyticsSheet = spreadsheet.getSheetByName('Analytics Dashboard');
+  
+  if (!analyticsSheet) {
+    analyticsSheet = spreadsheet.insertSheet('Analytics Dashboard');
+  }
+  
+  const gameSheet = spreadsheet.getSheetByName('Zetamac Games');
+  if (!gameSheet || gameSheet.getLastRow() <= 1) {
+    analyticsSheet.getRange(1, 1).setValue('No game data available yet.');
+    return;
+  }
+  
+  // Clear existing content
+  analyticsSheet.clear();
+  
+  // Create analytics headers and formulas
+  const analytics = [
+    ['📊 ZETAMAC ANALYTICS DASHBOARD', '', '', ''],
+    ['Generated:', new Date(), '', ''],
+    ['', '', '', ''],
+    ['🎯 PERFORMANCE SUMMARY', '', '', ''],
+    ['Total Games Played:', `=COUNTA(${gameSheet.getName()}!A:A)-1`, '', ''],
+    ['Best Score:', `=MAX(${gameSheet.getName()}!F:F)`, '', ''],
+    ['Average Score:', `=AVERAGE(${gameSheet.getName()}!F:F)`, '', ''],
+    ['Total Questions Answered:', `=SUM(${gameSheet.getName()}!G:G)`, '', ''],
+    ['Average Accuracy:', `=AVERAGE(${gameSheet.getName()}!K:K)`, '%', ''],
+    ['Average Game Duration:', `=AVERAGE(${gameSheet.getName()}!H:H)`, 'seconds', ''],
+    ['', '', '', ''],
+    ['📈 TRENDS & INSIGHTS', '', '', ''],
+    ['Games This Week:', `=COUNTIF(${gameSheet.getName()}!D:D,">="&TODAY()-7)`, '', ''],
+    ['Best Score This Week:', `=MAXIFS(${gameSheet.getName()}!F:F,${gameSheet.getName()}!D:D,">="&TODAY()-7)`, '', ''],
+    ['Improvement Trend:', '=IF(AVERAGE(OFFSET(' + gameSheet.getName() + '!F:F,-5,0,5,1))>AVERAGE(OFFSET(' + gameSheet.getName() + '!F:F,-10,0,5,1)),"↗️ Improving","→ Stable")', '', '']
+  ];
+  
+  // Insert analytics data
+  for (let i = 0; i < analytics.length; i++) {
+    analyticsSheet.getRange(i + 1, 1, 1, 4).setValues([analytics[i]]);
+  }
+  
+  // Format the dashboard
+  analyticsSheet.getRange(1, 1, 1, 4).merge().setBackground('#4CAF50').setFontColor('#FFFFFF').setFontWeight('bold').setFontSize(16);
+  analyticsSheet.getRange(4, 1, 1, 4).merge().setBackground('#2196F3').setFontColor('#FFFFFF').setFontWeight('bold');
+  analyticsSheet.getRange(12, 1, 1, 4).merge().setBackground('#FF9800').setFontColor('#FFFFFF').setFontWeight('bold');
+  
+  analyticsSheet.autoResizeColumns(1, 4);
+}
+
+// Auto-run analytics update every time new data is added
+function onEdit(e) {
+  const sheet = e.source.getActiveSheet();
+  if (sheet.getName() === 'Zetamac Games') {
+    // Delay to ensure data is fully written
+    Utilities.sleep(1000);
+    createAnalyticsDashboard();
+  }
+}
+
+// Create a time-based trigger for regular updates
+function setupAutoAnalytics() {
+  // Delete existing triggers
+  ScriptApp.getProjectTriggers().forEach(trigger => {
+    if (trigger.getHandlerFunction() === 'createAnalyticsDashboard') {
+      ScriptApp.deleteTrigger(trigger);
+    }
+  });
+  
+  // Create new trigger to update analytics every hour
+  ScriptApp.newTrigger('createAnalyticsDashboard')
+    .timeBased()
+    .everyHours(1)
+    .create();
+}
+
         
-        <div class="setup-section">
-            <h3>ðŸ”§ Google Sheets Setup (Detailed Instructions)</h3>
-            <p><strong>Follow these exact steps to fix the HTTP 401 error:</strong></p>
-            <ol>
-                <li><strong>Go to <a href="https://console.cloud.google.com/" target="_blank">Google Cloud Console</a></strong></li>
-                <li><strong>Create a new project:</strong> Click "Select a project" â†’ "New Project" â†’ Name it "Zetamac Tracker"</li>
-                <li><strong>Enable Google Sheets API:</strong>
-                    <br>â€¢ Go to "APIs & Services" â†’ "Library"
-                    <br>â€¢ Search for "Google Sheets API" 
-                    <br>â€¢ Click it and press "Enable"
-                </li>
-                <li><strong>Create API Credentials:</strong>
-                    <br>â€¢ Go to "APIs & Services" â†’ "Credentials"
-                    <br>â€¢ Click "Create Credentials" â†’ "API Key"
-                    <br>â€¢ <strong>Important:</strong> Click "Restrict Key"
-                    <br>â€¢ Under "API restrictions" â†’ "Restrict key" â†’ Select "Google Sheets API"
-                    <br>â€¢ Under "Application restrictions" â†’ "HTTP referrers" â†’ Add: <code>https://arithmetic.zetamac.com/*</code>
-                    <br>â€¢ Save the API key
-                </li>
-                <li><strong>Create Google Sheet:</strong>
-                    <br>â€¢ Go to <a href="https://sheets.google.com" target="_blank">Google Sheets</a>
-                    <br>â€¢ Create a new blank spreadsheet
-                    <br>â€¢ <strong>IMPORTANT:</strong> Click "Share" â†’ "Change to anyone with the link can VIEW"
-                    <br>â€¢ Copy the Sheet ID from the URL
-                </li>
-            </ol>
-            <div class="code-block">
-Example Google Sheet URL:<br>
-https://docs.google.com/spreadsheets/d/<strong>1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms</strong>/edit<br><br>
-The Sheet ID is: <strong>1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms</strong>
-            </div>
-            <div class="warning">
-                <h4>ðŸ”‘ Critical Steps to Fix HTTP 401:</h4>
-                <ul>
-                    <li><strong>Sheet Permissions:</strong> MUST set sheet to "Anyone with link can VIEW" (not edit)</li>
-                    <li><strong>API Restrictions:</strong> Restrict API key to only Google Sheets API</li>
-                    <li><strong>HTTP Referrers:</strong> Add https://arithmetic.zetamac.com/* as allowed referrer</li>
-                    <li><strong>Wait 2-3 minutes</strong> after creating API key for it to become active</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="bookmarklet-section">
-            <h3>ðŸ“Ž Install the Enhanced Tracker</h3>
-            <p>Drag this button to your browser's bookmarks bar:</p>
             
-            <a href='javascript:(function(){if(window.zetamacAdvanced){window.zetamacAdvanced.toggle();return;}var tracker={isRecording:false,sessions:[],currentSession:null,popup:null,observer:null,urlObserver:null,questionObserver:null,lastQuestion:"",lastAnswer:"",questionCount:0,apiKey:"",sheetId:"",init:function(){this.createPopup();this.startTracking();this.trackUrlChanges();},createPopup:function(){this.popup=document.createElement("div");this.popup.style.cssText="position:fixed;top:10px;right:10px;width:400px;background:white;border:2px solid #007bff;border-radius:12px;box-shadow:0 8px 25px rgba(0,0,0,0.3);z-index:999999;font-family:Arial,sans-serif;font-size:13px;max-height:90vh;overflow-y:auto;";this.popup.innerHTML="<div style=\"background:#007bff;color:white;padding:15px;font-weight:bold;border-radius:10px 10px 0 0;position:relative;\">ðŸŽ¯ Advanced Zetamac Tracker<button id=\"zta-close-btn\" style=\"position:absolute;top:10px;right:10px;background:none;border:none;color:white;font-size:20px;cursor:pointer;\">Ã—</button></div><div style=\"padding:15px;\"><div id=\"zta-setup\" style=\"background:#fff3cd;padding:10px;border-radius:6px;margin-bottom:15px;\"><div style=\"font-weight:bold;margin-bottom:8px;\">âš™ï¸ Setup Required</div><input id=\"zta-api-key\" placeholder=\"Google Sheets API Key\" style=\"width:100%;padding:8px;margin:4px 0;border:1px solid #ddd;border-radius:4px;box-sizing:border-box;\"><input id=\"zta-sheet-id\" placeholder=\"Google Sheet ID\" style=\"width:100%;padding:8px;margin:4px 0;border:1px solid #ddd;border-radius:4px;box-sizing:border-box;\"><button id=\"zta-save-config\" style=\"background:#28a745;color:white;border:none;padding:8px 12px;border-radius:4px;cursor:pointer;font-size:12px;\">Save Config</button></div><div style=\"margin-bottom:15px;\"><button id=\"zta-record-btn\" style=\"background:#6c757d;color:white;border:none;padding:12px 18px;border-radius:6px;cursor:pointer;margin-right:8px;font-size:13px;\" disabled>â–¶ Start Recording</button><button id=\"zta-sync-btn\" style=\"background:#6c757d;color:white;border:none;padding:12px 18px;border-radius:6px;cursor:pointer;font-size:13px;\" disabled>ðŸ”„ Sync to Sheets</button></div><div id=\"zta-url-status\" style=\"margin-bottom:10px;font-size:11px;color:#666;background:#f8f9fa;padding:8px;border-radius:4px;font-family:monospace;\">Main page ready</div><div id=\"zta-status\" style=\"margin-bottom:12px;font-weight:bold;color:#666;font-size:13px;\">Setup required to begin</div><div id=\"zta-session-display\" style=\"background:#f8f9fa;border:1px solid #dee2e6;border-radius:6px;padding:12px;max-height:200px;overflow-y:auto;font-size:12px;\">Complete setup to start tracking questions</div></div>";document.body.appendChild(this.popup);var self=this;document.getElementById("zta-record-btn").onclick=function(){self.toggleRecording();};document.getElementById("zta-sync-btn").onclick=function(){self.syncToSheets();};document.getElementById("zta-close-btn").onclick=function(){self.close();};document.getElementById("zta-save-config").onclick=function(){self.saveConfig();};this.loadConfig();},saveConfig:function(){this.apiKey=document.getElementById("zta-api-key").value.trim();this.sheetId=document.getElementById("zta-sheet-id").value.trim();if(this.apiKey&&this.sheetId){document.getElementById("zta-setup").style.display="none";document.getElementById("zta-record-btn").disabled=false;document.getElementById("zta-record-btn").style.background="#28a745";document.getElementById("zta-sync-btn").disabled=false;document.getElementById("zta-sync-btn").style.background="#007bff";this.updateStatus("âœ… Setup complete - ready to record!");alert("âœ… Configuration saved! You can now start recording.");}else{alert("âŒ Please enter both API Key and Sheet ID");}},loadConfig:function(){var saved=localStorage.getItem("zetamac-config");if(saved){try{var config=JSON.parse(saved);this.apiKey=config.apiKey||"";this.sheetId=config.sheetId||"";if(this.apiKey&&this.sheetId){document.getElementById("zta-api-key").value=this.apiKey;document.getElementById("zta-sheet-id").value=this.sheetId;this.saveConfig();}}catch(e){}}},trackUrlChanges:function(){var self=this;setInterval(function(){self.updateUrlStatus();},500);},startTracking:function(){var self=this;this.observer=new MutationObserver(function(mutations){if(self.isRecording){self.checkForQuestion();self.checkForAnswer();}});this.observer.observe(document.body,{childList:true,subtree:true,characterData:true});},checkForQuestion:function(){var questionElements=document.querySelectorAll("*");var currentQuestion="";for(var i=0;i<questionElements.length;i++){var elem=questionElements[i];var text=(elem.textContent||"").trim();if(text.match(/^\d+[\+\-\*\/Ã—Ã·]\d+$|^\d+\s*[\+\-\*\/Ã—Ã·]\s*\d+$/)){currentQuestion=text;break;}}if(currentQuestion&&currentQuestion!==this.lastQuestion){this.lastQuestion=currentQuestion;this.questionCount++;this.recordQuestion(currentQuestion);}},checkForAnswer:function(){var inputs=document.querySelectorAll("input");var currentAnswer="";for(var i=0;i<inputs.length;i++){var input=inputs[i];if(input.type==="text"||input.type==="number"){currentAnswer=input.value.trim();break;}}if(currentAnswer&&currentAnswer!==this.lastAnswer&&!isNaN(currentAnswer)){this.lastAnswer=currentAnswer;if(this.currentSession&&this.currentSession.questions.length>0){var lastQ=this.currentSession.questions[this.currentSession.questions.length-1];if(!lastQ.answer){lastQ.answer=currentAnswer;lastQ.answerTime=new Date().toISOString();lastQ.responseTime=new Date().getTime()-new Date(lastQ.timestamp).getTime();this.updateDisplay();}}}},recordQuestion:function(question){if(!this.currentSession)return;var timestamp=new Date();var questionData={questionNumber:this.questionCount,question:question,timestamp:timestamp.toISOString(),displayTime:timestamp.toLocaleString(),answer:"",answerTime:"",responseTime:0};this.currentSession.questions.push(questionData);this.updateDisplay();this.updateStatus("ðŸ“ Question "+this.questionCount+": "+question);},getGameKey:function(){var url=window.location.href;var match=url.match(/[?&]key=([a-f0-9]+)/i);return match?match[1]:"no-key";},toggleRecording:function(){this.isRecording=!this.isRecording;var btn=document.getElementById("zta-record-btn");if(this.isRecording){this.startNewSession();btn.innerHTML="â¹ Stop Recording";btn.style.background="#dc3545";this.updateStatus("ðŸ”´ Recording questions and answers...");}else{this.endCurrentSession();btn.innerHTML="â–¶ Start Recording";btn.style.background="#28a745";this.updateStatus("â¸ Recording stopped");document.getElementById("zta-sync-btn").style.background="#007bff";}},startNewSession:function(){this.currentSession={gameKey:this.getGameKey(),startTime:new Date().toISOString(),endTime:"",questions:[],finalScore:0};this.questionCount=0;this.lastQuestion="";this.lastAnswer="";},endCurrentSession:function(){if(this.currentSession){this.currentSession.endTime=new Date().toISOString();var scoreText=document.body.textContent||"";var scoreMatch=scoreText.match(/Score:\s*(\d+)/);this.currentSession.finalScore=scoreMatch?parseInt(scoreMatch[1]):0;this.sessions.push(this.currentSession);this.currentSession=null;}},updateUrlStatus:function(){var urlStatus=document.getElementById("zta-url-status");if(urlStatus){var gameKey=this.getGameKey();if(gameKey==="no-key"){urlStatus.innerHTML="ðŸ“ Main page (ready to start game)";}else{urlStatus.innerHTML="ðŸŽ® Game active (Key: "+gameKey+")";}}},updateDisplay:function(){var display=document.getElementById("zta-session-display");if(!this.isRecording&&this.sessions.length===0){display.innerHTML="<em style=\"color:#6c757d;\">No sessions recorded yet...</em>";return;}var html="";if(this.isRecording&&this.currentSession){html+="<div style=\"font-weight:bold;color:#dc3545;margin-bottom:8px;\">ðŸ”´ Current Session ("+this.currentSession.questions.length+" questions)</div>";if(this.currentSession.questions.length>0){var recent=this.currentSession.questions.slice(-3);recent.forEach(function(q){var responseText=q.answer?(" â†’ "+q.answer+" ("+q.responseTime+"ms)"):" (waiting for answer)";html+="<div style=\"background:white;margin:3px 0;padding:6px;border-radius:3px;border-left:3px solid #dc3545;font-size:11px;\">Q"+q.questionNumber+": "+q.question+responseText+"</div>";});if(this.currentSession.questions.length>3){html+="<div style=\"text-align:center;margin:5px 0;color:#666;font-style:italic;font-size:10px;\">+ "+(this.currentSession.questions.length-3)+" more questions</div>";}}else{html+="<div style=\"color:#666;font-style:italic;\">Waiting for questions...</div>";}}if(this.sessions.length>0){html+="<div style=\"font-weight:bold;color:#495057;margin:10px 0 5px 0;\">ðŸ“Š Completed Sessions ("+this.sessions.length+")</div>";var recentSessions=this.sessions.slice(-2);recentSessions.forEach(function(session){html+="<div style=\"background:#e8f5e8;margin:4px 0;padding:8px;border-radius:4px;border-left:3px solid #28a745;\"><div style=\"font-weight:bold;font-size:11px;\">Score: "+session.finalScore+" | "+session.questions.length+" questions</div><div style=\"font-size:10px;color:#666;\">Key: "+session.gameKey+"</div></div>";});}display.innerHTML=html;display.scrollTop=display.scrollHeight;},updateStatus:function(message){var status=document.getElementById("zta-status");if(status){status.textContent=message;}},syncToSheets:function(){if(this.sessions.length===0){alert("No data to sync!");return;}if(!this.apiKey||!this.sheetId){alert("Please configure Google Sheets API first!");return;}this.updateStatus("ðŸ”„ Syncing to Google Sheets...");var self=this;this.createSheetHeaders().then(function(){return self.uploadSessions();}).then(function(){self.updateStatus("âœ… Sync completed successfully!");alert("âœ… Data synced to Google Sheets successfully!");}).catch(function(error){self.updateStatus("âŒ Sync failed: "+error.message);alert("âŒ Sync failed: "+error.message);});},createSheetHeaders:function(){var headerData=[["Session","Game Key","Start Time","End Time","Final Score","Question Number","Question","Answer","Question Time","Answer Time","Response Time (ms)"]];return this.writeToSheet("A1:K1",headerData);},uploadSessions:function(){var allData=[];var self=this;this.sessions.forEach(function(session,sessionIndex){session.questions.forEach(function(question){allData.push([sessionIndex+1,session.gameKey,session.startTime,session.endTime,session.finalScore,question.questionNumber,question.question,question.answer||"",question.timestamp,question.answerTime||"",question.responseTime||0]);});});return this.writeToSheet("A2:K"+(allData.length+1),allData);},writeToSheet:function(range,values){var url="https://sheets.googleapis.com/v4/spreadsheets/"+this.sheetId+"/values/"+range+"?valueInputOption=RAW&key="+this.apiKey;return fetch(url,{method:"PUT",headers:{"Content-Type":"application/json"},body:JSON.stringify({values:values})}).then(function(response){if(!response.ok){throw new Error("HTTP "+response.status);}return response.json();});},close:function(){if(this.observer){this.observer.disconnect();}if(this.popup&&this.popup.parentNode){this.popup.parentNode.removeChild(this.popup);}delete window.zetamacAdvanced;},toggle:function(){if(this.popup&&this.popup.parentNode){this.close();}else{this.init();}}};window.zetamacAdvanced=tracker;tracker.init();})()' class="bookmarklet">ðŸš€ Advanced Zetamac Tracker</a>
-        </div>
+1Enhanced Auto-Tracking Bookmarklet
+            
+This enhanced version automatically restarts when you refresh the page or start new games:
+            
+                ×
+📊 Click \"Setup Sheets\" to enable auto-sync
+0
+Games
+0
+Best
+0.0
+Avg
+0
+Streak
+Current Game: 
+Waiting...
+Questions: 
+0
+ | Score: 
+0
+📊 Setup Sheets
+📥 CSV
+📈 Stats
+`;document.body.appendChild(dashboard);},startTracking(){this.isTracking=true;this.monitorGameState();console.log('Enhanced tracking started');},monitorGameState(){const checkGameState=()=>{try{const scoreElement=document.querySelector('.score');const questionElement=document.querySelector('.question');const timeElement=document.querySelector('.time_left');if(scoreElement&&questionElement&&timeElement){const currentScore=parseInt(scoreElement.textContent)||0;const currentQuestion=questionElement.textContent.trim();const timeLeft=parseInt(timeElement.textContent)||0;const gameKey=this.extractGameKey(window.location.href);if(!this.currentGame||(this.currentGame.isComplete&¤tScore>0)){this.startNewGame(gameKey);}if(this.currentGame&&!this.currentGame.isComplete){this.trackQuestion(currentQuestion,currentScore,timeLeft);}}this.updateDashboard();}catch(e){console.error('Enhanced tracking error:',e);}if(this.isTracking){setTimeout(checkGameState,100);}};checkGameState();},startNewGame(gameKey){this.currentGame={gameKey:gameKey,url:window.location.href,startTime:new Date(),questions:[],finalScore:0,isComplete:false,totalQuestions:0,operationTypes:{},questionTypes:[],avgResponseTime:0};this.questionStartTime=new Date();console.log('New enhanced game started:',gameKey);},extractGameKey(url){const match=url.match(/[?&]key=([^&]*)/);return match?match[1]:'game_'+Date.now();},trackQuestion(questionText,currentScore,timeLeft){if(!this.currentGame||this.currentGame.isComplete)return;const now=new Date();const lastQuestion=this.currentGame.questions[this.currentGame.questions.length-1];if(!lastQuestion||lastQuestion.question!==questionText){if(lastQuestion){const solveTime=(now-this.questionStartTime)/1000;lastQuestion.timeToSolve=solveTime;lastQuestion.wasCorrect=currentScore>this.currentGame.finalScore;this.analyzeQuestion(lastQuestion);}this.currentGame.questions.push({question:questionText,timestamp:now,score:currentScore,timeLeft:timeLeft,timeToSolve:null,wasCorrect:null,questionNumber:this.currentGame.questions.length+1});this.questionStartTime=now;}this.currentGame.finalScore=currentScore;this.currentGame.totalQuestions=this.currentGame.questions.length;if(timeLeft===0&&!this.currentGame.isComplete){this.completeGame();}},analyzeQuestion(question){const operationType=this.detectOperationType(question.question);if(operationType){this.currentGame.operationTypes[operationType]=(this.currentGame.operationTypes[operationType]||0)+1;}this.currentGame.questionTypes.push({type:operationType,correct:question.wasCorrect,time:question.timeToSolve});},detectOperationType(questionText){if(questionText.includes('×')||questionText.includes('*'))return'multiplication';if(questionText.includes('÷')||questionText.includes('/'))return'division';if(questionText.includes('+'))return'addition';if(questionText.includes('-'))return'subtraction';return'unknown';},completeGame(){if(!this.currentGame||this.currentGame.isComplete)return;this.currentGame.endTime=new Date();this.currentGame.isComplete=true;this.currentGame.duration=(this.currentGame.endTime-this.currentGame.startTime)/1000;const responseTimes=this.currentGame.questions.filter(q=>q.timeToSolve).map(q=>q.timeToSolve);this.currentGame.avgResponseTime=responseTimes.length>0?responseTimes.reduce((a,b)=>a+b,0)/responseTimes.length:0;if(this.currentGame.questions.length>0){const lastQuestion=this.currentGame.questions[this.currentGame.questions.length-1];if(lastQuestion.timeToSolve===null){lastQuestion.timeToSolve=(this.currentGame.endTime-this.questionStartTime)/1000;lastQuestion.wasCorrect=true;}}this.gameData.push({...this.currentGame});this.saveToLocalStorage();this.syncToGoogleSheets();console.log('Enhanced game completed. Total games:',this.gameData.length);},updateDashboard(){const stats=this.calculateStats();document.getElementById('games-count').textContent=stats.totalGames;document.getElementById('best-score').textContent=stats.bestScore;document.getElementById('avg-score').textContent=stats.avgScore.toFixed(1);document.getElementById('current-streak').textContent=stats.currentStreak;if(this.currentGame){document.getElementById('current-status').textContent=this.currentGame.isComplete?'Completed':'In Progress';document.getElementById('current-questions').textContent=this.currentGame.totalQuestions;document.getElementById('current-score').textContent=this.currentGame.finalScore;}const syncStatus=document.getElementById('sync-status');if(this.autoSyncEnabled){syncStatus.innerHTML='✅ Auto-sync enabled - Data syncing to Google Sheets';syncStatus.style.background='rgba(76,175,80,0.2)';}},calculateStats(){const completed=this.gameData.filter(g=>g.isComplete);const totalGames=completed.length;const bestScore=totalGames>0?Math.max(...completed.map(g=>g.finalScore)):0;const avgScore=totalGames>0?completed.reduce((sum,g)=>sum+g.finalScore,0)/totalGames:0;return{totalGames,bestScore,avgScore,currentStreak:this.getCurrentStreak()};},getCurrentStreak(){let streak=0;for(let i=this.gameData.length-1;i>=0;i--){if(this.gameData[i].isComplete&&this.gameData[i].finalScore>0){streak++;}else{break;}}return streak;},setupGoogleSheets(){const url=prompt('Enter your Google Apps Script Web App URL:\\n(Leave blank to set up later)');if(url){this.googleScriptUrl=url.trim();this.autoSyncEnabled=true;this.saveSettings();this.startAutoSync();alert('✅ Google Sheets integration enabled!\\nData will now auto-sync every 30 seconds.');}else{alert('You can set this up later by clicking \"Setup Sheets\" again.');}},startAutoSync(){if(this.syncInterval){clearInterval(this.syncInterval);}if(this.autoSyncEnabled&&this.googleScriptUrl){this.syncInterval=setInterval(()=>{this.syncToGoogleSheets();},30000);console.log('Auto-sync started - every 30 seconds');}},syncToGoogleSheets(){if(!this.autoSyncEnabled||!this.googleScriptUrl||this.gameData.length===0)return;const unsyncedGames=this.gameData.filter(g=>!g.synced);if(unsyncedGames.length===0)return;const payload={games:unsyncedGames.map(game=>({gameKey:game.gameKey,url:game.url,startTime:game.startTime.toISOString(),endTime:game.endTime?game.endTime.toISOString():'',finalScore:game.finalScore,totalQuestions:game.totalQuestions,duration:game.duration||0,avgResponseTime:game.avgResponseTime||0,operationBreakdown:JSON.stringify(game.operationTypes||{}),accuracy:game.questions.filter(q=>q.wasCorrect).length/Math.max(game.questions.length,1)*100}))};fetch(this.googleScriptUrl,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)}).then(response=>response.json()).then(data=>{if(data.success){unsyncedGames.forEach(game=>game.synced=true);this.saveToLocalStorage();console.log('Synced',unsyncedGames.length,'games to Google Sheets');}}).catch(error=>{console.error('Sync error:',error);});},exportToCSV(){const csvData=[['Game Key','URL','Start Time','End Time','Final Score','Questions','Duration','Avg Response Time','Operation Breakdown','Accuracy %']];this.gameData.filter(g=>g.isComplete).forEach(game=>{const accuracy=game.questions.filter(q=>q.wasCorrect).length/Math.max(game.questions.length,1)*100;csvData.push([game.gameKey,game.url,game.startTime.toISOString(),game.endTime?game.endTime.toISOString():'',game.finalScore,game.totalQuestions,game.duration||0,game.avgResponseTime||0,JSON.stringify(game.operationTypes||{}),accuracy.toFixed(1)]);});const csvContent='data:text/csv;charset=utf-8,'+csvData.map(row=>row.map(cell=>`\"${cell}\"`).join(',')).join('\\n');const link=document.createElement('a');link.setAttribute('href',encodeURI(csvContent));link.setAttribute('download',`zetamac-enhanced-${new Date().toISOString().split('T')[0]}.csv`);link.click();alert('📥 Enhanced CSV exported with detailed analytics!');},showDetailedStats(){const modal=document.createElement('div');modal.className='stats-modal';modal.innerHTML=`
+📊 Enhanced Analytics Dashboard
+×
 
-        <div class="instructions">
-            <h3>ðŸ“‹ How to Use the Enhanced Tracker</h3>
-            <ol>
-                <li><strong>Complete Google Sheets setup</strong> (see setup section above)</li>
-                <li><strong>Install:</strong> Drag the bookmarklet to your browser's bookmarks bar</li>
-                <li><strong>Navigate:</strong> Go to <strong>arithmetic.zetamac.com</strong></li>
-                <li><strong>Configure:</strong> Click the bookmarklet and enter your API key and Sheet ID</li>
-                <li><strong>Record:</strong> Click "â–¶ Start Recording" BEFORE starting a game</li>
-                <li><strong>Play:</strong> Play games normally - every question and answer is tracked</li>
-                <li><strong>Sync:</strong> Click "ðŸ”„ Sync to Sheets" to upload data directly to Google Sheets</li>
-            </ol>
-        </div>
+`;const content=modal.querySelector('#detailed-stats-content');const stats=this.calculateEnhancedStats();content.innerHTML=stats;document.body.appendChild(modal);},calculateEnhancedStats(){const completed=this.gameData.filter(g=>g.isComplete);if(completed.length===0)return'
+No completed games yet. Play some games to see detailed stats!
+';const totalQuestions=completed.reduce((sum,g)=>sum+g.totalQuestions,0);const totalCorrect=completed.reduce((sum,g)=>sum+g.questions.filter(q=>q.wasCorrect).length,0);const overallAccuracy=totalQuestions>0?(totalCorrect/totalQuestions*100):0;const avgGameDuration=completed.reduce((sum,g)=>sum+(g.duration||0),0)/completed.length;const operationStats={};completed.forEach(game=>{Object.entries(game.operationTypes||{}).forEach(([op,count])=>{operationStats[op]=(operationStats[op]||0)+count;});});const recentGames=completed.slice(-5).reverse();return`
+${completed.length}
+Total Games
+${overallAccuracy.toFixed(1)}%
+Overall Accuracy
+${avgGameDuration.toFixed(1)}s
+Avg Game Duration
+${totalQuestions}
+Total Questions
+📈 Operation Breakdown
+${Object.entries(operationStats).map(([op,count])=>`
+${Op}
+${count}
+`).join('')}
+🎯 Recent Games
+${recentGames.map((game,i)=>`
+Game ${recentGames.length-i}
+Score: ${game.finalScore}
+${game.totalQuestions} questions • ${(game.duration||0).toFixed(1)}s • ${game.startTime.toLocaleDateString()}
+`).join('')}
+`;},saveToLocalStorage(){try{localStorage.setItem('zetamac-tracker-data',JSON.stringify(this.gameData));}catch(e){console.error('localStorage save error:',e);}},loadFromLocalStorage(){try{const saved=localStorage.getItem('zetamac-tracker-data');if(saved){this.gameData=JSON.parse(saved);this.gameData.forEach(game=>{if(game.startTime&&typeof game.startTime==='string'){game.startTime=new Date(game.startTime);}if(game.endTime&&typeof game.endTime==='string'){game.endTime=new Date(game.endTime);}});console.log('Loaded',this.gameData.length,'games from storage');}}catch(e){console.error('localStorage load error:',e);}},injectStyles(){const style=document.createElement('style');style.textContent=`#zetamac-dashboard *{box-sizing:border-box !important;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif !important;}`;document.head.appendChild(style);}};tracker.loadFromLocalStorage();tracker.init();window.zetamacTracker=tracker;})();" class="bookmarklet">🚀 Enhanced Auto-Tracker
+            
+Key Enhancements:
+* ✅ Auto-restarts when you refresh the page or start new games
+* 📊 Enhanced analytics - tracks operation types, accuracy, response times
+* 🔄 Auto-sync to Google Sheets every 30 seconds
+* 💾 Persistent settings - remembers your Google Sheet URL
+* 🎯 Real-time dashboard with current game status
+2Google Apps Script Setup
+Create this script to automatically receive and store your Zetamac data:
+📋 Instructions:
+1. Go to script.google.com
+2. Click "New Project"
+3. Replace the default code with the script below
+4. Save the project (Ctrl+S)
+5. Click "Deploy" → "New deployment"
+6. Choose "Web app" → Execute as "Me" → Access "Anyone"
+7. Copy the Web App URL
+function doPost(e) {
+  try {
+    const data = JSON.parse(e.postData.contents);
+    const sheet = getOrCreateSheet();
+    
+    // Add headers if sheet is empty
+    if (sheet.getLastRow() === 0) {
+      sheet.appendRow([
+        'Timestamp', 'Game Key', 'URL', 'Start Time', 'End Time', 
+        'Final Score', 'Total Questions', 'Duration (s)', 'Avg Response Time', 
+        'Operation Breakdown', 'Accuracy %', 'Sync Date'
+      ]);
+      
+      // Format headers
+      const headerRange = sheet.getRange(1, 1, 1, 12);
+      headerRange.setBackground('#4CAF50');
+      headerRange.setFontColor('#FFFFFF');
+      headerRange.setFontWeight('bold');
+    }
+    
+    // Process each game
+    data.games.forEach(game => {
+      sheet.appendRow([
+        new Date().toISOString(),
+        game.gameKey,
+        game.url,
+        game.startTime,
+        game.endTime,
+        game.finalScore,
+        game.totalQuestions,
+        game.duration,
+        game.avgResponseTime,
+        game.operationBreakdown,
+        game.accuracy,
+        new Date()
+      ]);
+    });
+    
+    // Auto-resize columns for better readability
+    sheet.autoResizeColumns(1, 12);
+    
+    return ContentService
+      .createTextOutput(JSON.stringify({success: true, processed: data.games.length}))
+      .setMimeType(ContentService.MimeType.JSON);
+      
+  } catch (error) {
+    console.error('Error processing data:', error);
+    return ContentService
+      .createTextOutput(JSON.stringify({success: false, error: error.toString()}))
+      .setMimeType(ContentService.MimeType.JSON);
+  }
+}
 
-        <div class="features">
-            <div class="feature-card">
-                <h4>ðŸ“ Question-Level Tracking</h4>
-                <p>Captures every individual question that appears during gameplay with precise timestamps.</p>
-            </div>
-            <div class="feature-card">
-                <h4>â±ï¸ Response Time Analysis</h4>
-                <p>Measures how long it takes you to answer each question in milliseconds.</p>
-            </div>
-            <div class="feature-card">
-                <h4>ðŸŽ¯ Answer Accuracy</h4>
-                <p>Records your answers to each question for accuracy analysis.</p>
-            </div>
-            <div class="feature-card">
-                <h4>ðŸ“Š Direct Google Sheets Sync</h4>
-                <p>Uploads data directly to your Google Sheet with structured columns for analysis.</p>
-            </div>
-            <div class="feature-card">
-                <h4>ðŸŽ® Multi-Session Support</h4>
-                <p>Tracks multiple game sessions with separate game keys and scores.</p>
-            </div>
-            <div class="feature-card">
-                <h4>ðŸ“ˆ Advanced Analytics Ready</h4>
-                <p>Data is structured for pivot tables, charts, and statistical analysis in Google Sheets.</p>
-            </div>
-        </div>
+function getOrCreateSheet() {
+  const spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
+  let sheet = spreadsheet.getSheetByName('Zetamac Games');
+  
+  if (!sheet) {
+    sheet = spreadsheet.insertSheet('Zetamac Games');
+  }
+  
+  return sheet;
+}
 
-        <div class="note">
-            <h4>ðŸ“Š Google Sheets Data Structure</h4>
-            <p>Your data will be organized in Google Sheets with these columns:</p>
-            <ul>
-                <li><strong>Session:</strong> Session number for grouping games</li>
-                <li><strong>Game Key:</strong> Unique identifier for each game</li>
-                <li><strong>Start/End Time:</strong> When the game session began and ended</li>
-                <li><strong>Final Score:</strong> Your final score for the game</li>
-                <li><strong>Question Number:</strong> Sequential number of each question</li>
-                <li><strong>Question:</strong> The actual math problem (e.g., "15+23")</li>
-                <li><strong>Answer:</strong> Your submitted answer</li>
-                <li><strong>Question/Answer Time:</strong> Timestamps for question display and answer submission</li>
-                <li><strong>Response Time:</strong> Milliseconds taken to answer each question</li>
-            </ul>
-        </div>
-
-        <div class="warning">
-            <h4>ðŸ”’ API Key Security</h4>
-            <p><strong>Important:</strong> Your API key will be stored in your browser's local storage. For maximum security:</p>
-            <ul>
-                <li>Only use this on your personal computer</li>
-                <li>Consider restricting your API key to specific IP addresses in Google Cloud Console</li>
-                <li>Set usage quotas to prevent unexpected charges</li>
-                <li>The tracker only accesses your specified Google Sheet</li>
-            </ul>
-        </div>
-    </div>
-</body>
-</html>
+function doGet() {
+  return HtmlService.createHtmlOutput(`
+    
+Zetamac Tracker - Google Apps Script
+    
+✅ Script is working! Your Zetamac data will appear here automatically.
+    
+Last updated: ${new Date()}
+  `);
+}
